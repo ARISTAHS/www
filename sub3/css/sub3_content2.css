@@ -1,0 +1,50 @@
+/* 본문 영역 */
+
+#content .titleArea h2 span{
+  width:150px;
+}
+
+#content .titleArea p span{
+  color: #069;
+}
+
+.contentArea .titleArea,
+.contentArea section{
+  margin-bottom: 150px;
+}
+
+.contentArea section{
+  position: relative;
+  margin-top: 150px;
+}
+
+.contentArea .cont1 ul .chart1{
+  margin-left: 240px;
+}
+
+.contentArea section ul li dl{
+  width: 650px;
+  height: 330px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(200, 200, 200 , .7);
+  background: #f8f8f8;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: 275px;
+}
+
+.contentArea section ul li dt{
+  font-size: 1.750em;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+
+.contentArea section ul li dl dd{
+  padding: 5px 15px;
+  text-align: left;
+}
+.chart1{width: 60%; }

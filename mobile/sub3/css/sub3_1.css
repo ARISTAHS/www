@@ -1,0 +1,64 @@
+/* 본문 */
+
+.contentArea{width: 100%; margin-bottom: 50px;}
+.contentArea .text{margin-bottom: 30px;}
+.contentArea .text ul{width: 95%; overflow: hidden; margin: 0 auto;}
+.contentArea .text ul li{width: 50%; height: 290px; margin-bottom: 30px; text-align: center; float: left;}
+.contentArea .text ul li img{width: 50px; border: 1px solid #03509f; border-radius: 20px; margin: 0 auto;}
+.contentArea .text ul::after{content: ''; display: block; clear: both;}
+.contentArea .text ul li dl{overflow: hidden; padding: 10px;}
+.contentArea .text ul li dl dt{font-size: 1.8rem; font-weight: 500; color: #333;margin-bottom: 10px; text-align: center;}
+.contentArea .text ul li dl dd{font-size: 1rem; font-weight: 400; color: #999; text-align: justify;}
+
+
+.contentArea .tab_box .tab_menu{
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.contentArea .tab_box .tab_menu li{
+  float: left;
+  width: 50%;
+}
+.contentArea .tab_box .tab_menu li:nth-of-type(1){
+  border-right: 1px solid #999;}
+.contentArea .tab_box .tab_menu li:nth-of-type(2){
+  border-left: 1px solid #999;
+}
+
+.contentArea .tab_box li a {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all .5s;
+  padding: 20px 5px;
+  background: #fff;
+  color: #333;
+}
+
+.contentArea .tab_box li::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.contentlist .swiper-container{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 70px;
+}
+.contentlist .swiper{width: 100%; padding-top: 30px; padding-bottom: 70px;}
+#content .contentlist .swiper-slide{width: 100%; padding: 36px 20px; background: #fff; border-radius: 24px; position: relative; overflow: hidden;}
+.contentlist .swiper-slide img {display: block; width: 150px;margin: 25px auto; border-radius: 20px;}
+
+#content .contentlist .swiper-container-3d .swiper-slide-shadow-left{border-radius: 24px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .contentlist .swiper-container-3d .swiper-slide-shadow-right{border-radius: 24px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .contentlist .swiper-pagination{bottom: 30px; width: 100%;}
+.swiper-pagination-bullet{margin: 0 4px;}
+
+.contentlist li dl dt{font-size: 1.8rem; font-weight: 500; color: #333; text-align: center; margin-bottom: 10px;}
+.contentlist li dl dd{font-size: 1.15rem; font-weight: 400; color: #999; text-align: left;}

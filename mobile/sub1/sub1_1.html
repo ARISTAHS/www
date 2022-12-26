@@ -1,0 +1,236 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>기업정보-기업소개</title>
+
+<link rel="apple-touch-icon-precomposed" href="../appico.jpg">
+<link rel="apple-touch-startup-image" href="../startup.png">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./common/sub1_common.css">
+<link rel="stylesheet" href="./css/sub1_1.css">
+
+
+<script src="https://kit.fontawesome.com/ef15d6eb6f.js" crossorigin="anonymous"></script>
+<script src="../js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ 
+</head>
+<body>
+
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+ 
+  <div id="wrap">
+
+    <header id="headerArea">
+
+        <div class="header_top">
+          <h1 class="logo"><a href="../index.html">SAMSUNG DISPLAY</a></h1>
+          <a href="#" class="menu_open">
+             <span>햄버거</span>
+         </a>
+        </div>
+ 
+        <div class="modal_box"></div>   
+        <nav id="gnb">
+          <h2 class="hidden">글로벌네비게이션영역</h2>
+          <ul class="mainMenu">
+            <li class="depth1">
+                <h3><a href="#">기업정보<i class="fa-solid fa-plus"></i></a></h3>
+                 <ul>
+                   <li>
+                     <a href="../sub1/sub1_1.html">기업소개</a>
+                   </li>
+                   <li>
+                     <a href="../sub1/sub1_2.html">CEO인사말</a>
+                   </li>
+                   <li>
+                     <a href="../sub1/sub1_3.html">SDC Culture</a>
+                   </li>
+                   <li>
+                     <a href="../sub1/sub1_4.html">연혁</a>
+                   </li>
+                 </ul>
+            </li>
+            <li class="depth1">
+                <h3><a href="#">기술센터<i class="fa-solid fa-plus"></i></a></h3>
+               <ul>
+                 <li>
+                    <a href="../sub2/sub2_1.html">Innovative Technology</a>
+                 </li>
+                 <li>
+                    <a href="../sub2/sub2_2.html">Product Description</a>
+                 </li>
+               </ul>
+            </li>
+            <li class="depth1">
+                <h3><a href="#">인재채용<i class="fa-solid fa-plus"></i></a></h3>
+                <ul>
+                    <li>
+                        <a href="../sub3/sub3_1.html">Employment</a>
+                    </li>
+                    <li>
+                        <a href="../sub3/sub3_2.html">company benefits</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="depth1 last">
+                <h3><a href="#">고객지원<i class="fa-solid fa-plus"></i></a></h3>
+               <ul>
+                 <li>
+                    <a href="../sub4/sub4_1.html">FAQ</a>
+                 </li>
+                 <li>
+                    <a href="../sub4/sub4_2.html">찾아오시는 길</a>
+                 </li>
+               </ul>
+            </li>
+        </ul>
+           
+           <ul class="login">
+               <li>
+                   <a href="#">로그인</a>
+               </li>
+               <li>
+                   <a href="#">회원가입</a>
+               </li>
+           </ul>
+       </nav>
+         
+     </header>
+
+     <div class="visual">
+        <img src="./images/sub1_magin.jpg" alt="회사외관건물">
+        <h3>기업정보</h3>
+      </div>
+
+    <div class="subNav">
+        <ul>
+          <li><a class="current" href="./sub1_1.html">기업소개</a></li>
+          <li><a href="./sub1_2.html">CEO 인사말</a></li>
+          <li><a href="./sub1_3.html">SDC Culture</a></li>
+          <li><a href="./sub1_4.html">연혁</a></li>
+        </ul>
+      </div>
+
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>    
+
+        <div class="titleArea">
+            <h2>기업소개<span></span></h2>
+            <p>끊임없는 기술혁신을 통해 글로벌 디스플레이 시장을 선도하겠습니다.</p>
+          </div>
+
+        <div class="contentArea">
+            <ul>
+              <li>
+                <img src="./images/sub1_1(640)_content1.png" alt="광학기술사진">
+                <p>
+                  <strong>삼성디스플레이</strong>는 끊임없는 기술혁신을 통해 현재와 미래를 연결하는 디스플레이를 만드는 회사입니다.
+                </p>
+              </li>
+              <li>
+                <img src="./images/sub1_1(640)_content2.png" alt="연구실사진">
+                <p>
+                  <strong>삼성디스플레이</strong>는 2012년 OLED와 LCD의 합병으로 사업의 시너지를 극대화했으며, 독보적인 기술을 바탕으로 스마트폰, 노트북, 모니터, TV 등에 프리미엄 디스플레이 제품을 공급하고 있습니다.
+                </p>
+              </li>
+              <li>
+                <img src="./images/sub1_1(640)_content3.png" alt="TV사진">
+                <p>
+                  <strong>세계 최초</strong>로 플렉서블 OLED와 폴더블 디스플레이를 양산하는 등 상상 속에만 존재하던 디스플레이를 현실로 만들어 가고 있습니다.
+                  그리고 대형 디스플레이 시장의 판도를 뒤집을 QD 디스플레이라는 새로운 도전을 시작하고 있습니다.
+                </p>
+              </li>
+              <li>
+                <img src="./images/sub1_1(640)_content4.png" alt="다른TV사진">
+                <p>
+                  <strong>삼성디스플레이</strong>는 자연을 그대로 담아내는 뛰어난 화질, 더욱 가볍고 얇은 디스플레이를 만드는 기술로 고객이 필요로 하는 토털 솔루션을 제공하고 있습니다.
+                  다양한 디자인 혁신과, 120Hz 고주사율, 그리고 저전력 구동으로 5G 시대에 가장 알맞은 디스플레이, 고객의 건강까지 고려하는 블루라이트 저감 기술 등 압도적인 초격차 기술 개발로 고객에게 새로운 가치를 제공합니다.
+                </p>
+              </li>
+              <!-- <li>
+                <p>
+                  <strong>글로벌 1위</strong>로서 시장을 이끌어 온 삼성디스플레이는 앞선 기술과 제품, 그리고 고객의 신뢰를 바탕으로 앞으로도 디스플레이 리더로서의 역할을 다할 것입니다.
+                </p>
+              </li> -->
+            </ul>
+          </div>
+
+    </article>
+
+    <footer id="footerArea">
+        <div class="footerInner">
+            <a href="#" class="move"><span class="hidden">top</span><i class="fa-light fa-circle-arrow-up"></i></a>
+
+            <div class="footer_top">
+                <ul class="terms">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">보안신고센터</a></li>
+                  </ul>
+                <div class="footer_family">
+                    <a class="arrow" href="#">Family Site<span class="hidden">열기</span><i class="fas fa-chevron-down"></i></a>
+                    
+                    <ul class="family_list">
+                      <li><a href="#" target="_blank" title="삼성전자 새창에 열림">삼성전자</a></li>
+                      <li><a href="#" target="_blank" title="삼성SDS 새창에 열림">삼성SDS</a></li>
+                      <li><a href="#" target="_blank" title="삼성물산 새창에 열림">삼성물산</a></li>
+                    </ul>
+                </div>
+            </div>
+         
+            <div class="footer_info">
+                <address>
+                    삼성디스플레이<br>
+                      대표이사 : 최주선<br>
+                      주소 : 경기도 용인시 기흥구 삼성로 1 삼성디스플레이 기흥(우) 1713<br>
+                      대표번호 : 031-5181-1114<br>
+                    
+                  </address>
+                  <p class="copy">Copyright © SAMSUNG DISPLAY All rights reserved.</p>
+
+                  <div class="snsicon">
+                    <ul>
+                        <li><a href="#" target="_blank" title="인스타그램 창열림"><span class="hidden">인스타그램</span><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#" target="_blank" title="유튜브 창열림"><span class="hidden">유튜브</span><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#" target="_blank" title="페이스북 창열림"><span class="hidden">페이스북</span><i class="fa-brands fa-square-facebook"></i></a></li>
+                      </ul>
+                </div>
+    
+            </div>
+
+        </div>
+    </footer>
+
+  </div>
+ 
+ <script src="../js/jquery-1.12.4.min.js"></script>
+ <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="../js/gnb.js"></script>
+ <script src="./js/main.js"></script>
+ <script src="./js/family.js"></script>
+ 
+</body>
+</html>

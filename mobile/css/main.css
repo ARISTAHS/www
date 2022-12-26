@@ -1,0 +1,108 @@
+/* CSS Document */
+
+.visual{
+  width: 100%; 
+  position:relative; 
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.gallery{position:relative; left:0; top:0; overflow:hidden;}
+.gallery li{display: none; position: relative;}
+
+.visual .gallery ul li span{
+  position: absolute;
+  left: 15%;
+  top:40%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: right;
+  opacity: 0;
+}
+.visual .gallery ul li:nth-of-type(3) span{
+  left: 10%;
+} 
+.visual .gallery ul span>strong{
+  color: #03509f;
+  font-size: 2.3rem;
+}
+.visual .gallery ul li img{
+  width: 100%;
+  }
+
+.dock{width:100%; position:absolute; left:33%; bottom:10%;}
+
+.dock .mbutton{ margin-right:15px; cursor:pointer; 
+    display:block; float:left; width:16px; height:16px;
+   background: rgba(255,255,255,.2); border-radius:8px;
+  transition: all .5s}
+
+.dock .ps{ margin-right:15px; margin-top: -5px; cursor:pointer; 
+    display:block; float:left; }
+
+.dock .ps i{color: #fff; font-size: 25px;}
+
+
+/* Innovative Technology */
+.inno{
+  width: 100%;
+  position: relative;
+}
+.inno .cont ul li{display: none;}
+.inno .cont ul li:nth-of-type(1){margin-bottom: 30px; display: block;}
+.inno .cont ul li dl{overflow: hidden; margin: 15px 20px;}
+.inno .cont ul li dl dt{
+  font-size: 2rem; font-weight: 500; text-align: center; padding-bottom:30px ;
+}
+.inno .cont ul li dl dd:nth-of-type(1){margin-top: 20px;}
+.inno .cont ul li dl dd:nth-of-type(2){color: #666; font-size: 1.563rem; font-weight: 400; text-align: justify; padding-top: 30px;}
+.inno .cont ul li{
+  text-align: center;} /*img 가운데 정렬*/
+.inno .cont ul li dl img{
+    width: 100%; border-radius: 30px;
+}
+.inno .control a{display: block;}
+.inno .control i{ font-family:"fontawesome";
+  font-size: 50px;
+  font-style: normal;  position: absolute; top: 95px;}
+.inno .control a:nth-of-type(1) i{left: 0;padding-left: 10px;}
+.inno .control a:nth-of-type(2) i{right: 0; padding-right: 10px;}  
+
+
+/* Product Description */
+
+.PD h3{padding-top: 30px;}
+#content .PD{background: #f8f8f8; position: relative; padding: 30px 20px;}
+.PD .swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 70px;
+}
+.PD .swiper{width: 100%; padding-top: 30px; padding-bottom: 70px;}
+#content .PD .swiper-slide{width: 340px; padding: 36px 10px; background: #fff; border-radius: 24px; position: relative; overflow: hidden;}
+.PD .swiper-slide img {display: block; width: 100%; height: 220px; margin: 16px auto;}
+.PD ul .swiper-slide a p.text{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; font-size: 1.5rem; font-weight: 400; z-index: 10;}
+
+#content .PD .swiper-container-3d .swiper-slide-shadow-left{border-radius: 24px; background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .PD .swiper-container-3d .swiper-slide-shadow-right{border-radius: 24px; background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .PD .swiper-pagination{bottom: 30px; width: 85%;}
+.swiper-pagination-bullet{margin: 0 4px;}
+
+/* Employment */
+.Employ{ margin: 0 20px; }
+.Employ div{position: relative; overflow: hidden;}
+.Employ div a img{ width: 100%; border-radius: 30px;}
+.Employ div a p{position: absolute; left: 5%; bottom:5%; font-size: 1.8rem; font-weight: 500; color: #fff;}
+.Employ div a strong{font-size: 2.2rem; color: #03509f;}
+
+/* faq */
+#content .faq{position:relative; margin:4rem 4.5%;}
+#content .faq ul{margin:1rem 0 0;}
+#content .faq ul li{border-top:1px solid #ddd;}
+#content .faq ul li:last-child{border-bottom:1px solid #ddd;}
+#content .faq ul li p{letter-spacing:-0.045rem; text-align:justify;}
+#content .faq ul li p a{position:relative; display:block; padding:1rem 0 1rem 2.85rem;}
+#content .faq ul li p a::before{content:'Q'; position:absolute; left:0.7142rem; top:.6rem; color:#005793; font-size:1.3751rem; font-weight:700;}
+#content .faq ul li p:nth-child(2){position:relative; padding:1rem 1rem 1rem 2.85rem; background:#f8f8f8; border-top:1px dotted #eee; display: none;}
+#content .faq ul li p:nth-child(2)::before{content:'A'; position:absolute; left:0.7142rem; top:.6rem; color:#333; font-size:1.3751rem; font-weight:700;}

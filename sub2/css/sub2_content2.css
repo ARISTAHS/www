@@ -1,0 +1,82 @@
+/* 본문 영역 */
+
+.contentArea div{
+  width: 1200px;
+}
+
+.contentArea div ul li{
+  text-align: center;
+  margin: 120px auto 0;
+  position: relative;
+  overflow: hidden;
+  height: 900px;
+} 
+
+.contentArea div ul li:last-of-type{
+  height: 1100px;
+}
+
+.contentArea div ul li dt{
+  font-size: 2.000em;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.contentArea div ul li dd{
+  font-size: 1em;
+  font-weight: 500;
+  text-align: justify;
+  white-space: pre-line;
+  padding: 0 80px;
+  line-height: 50px;
+}
+
+.contentArea div li span{
+  display: block;
+  height: 5px;
+  background: #069;
+  margin: 10px auto;
+}
+
+.contentArea div li:nth-of-type(1) span{
+  width: 200px;
+}
+
+.contentArea div li:nth-of-type(2) span{
+  width: 190px;
+}
+
+.contentArea div li:nth-of-type(3) span{
+  width: 160px;
+}
+
+.contentArea div li:nth-of-type(4) span{
+  width: 60px;
+}
+
+.contentArea div li:nth-of-type(1) img{
+  position: absolute;
+  bottom: 70px;
+  left: -10px;
+}
+.contentArea div li:nth-of-type(1) img:last-of-type{
+  position: absolute;
+  bottom: 2px;
+  left: 600px;
+}
+
+.contentArea div li:nth-of-type(2) img{
+  position: absolute;
+  bottom: 2px;
+  left: -10px;
+}
+.contentArea div li:nth-of-type(2) img:last-of-type{
+  position: absolute;
+  bottom: 50px;
+  left: 610px;
+}
+
+.contentArea div li:nth-of-type(3) img,
+.contentArea div li:nth-of-type(4) img{
+  margin-top: 70px;
+}

@@ -1,0 +1,232 @@
+<?
+  session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객지원-찾아오시는 길</title>
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./common/css/sub6common.css">
+  <link rel="stylesheet" href="./css/sub6_content3.css">
+
+  <script src="https://kit.fontawesome.com/ef15d6eb6f.js" crossorigin="anonymous"></script>
+  <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+  <? include "../common/sub_header.html" ?>
+
+  <div class="visual">
+    <img src="./common/images/sub6_main.jpg" alt="메인">
+    <h3>찾아오시는 길</h3>
+  </div>
+
+  <div class="subNav">
+    <ul>
+      <li><a href="../greet/list.php">공지사항</a></li>
+      <li><a href="./sub6_2.html">FAQ</a></li>
+      <li><a class="current" href="./sub6_3.html">찾아오시는 길</a></li>
+    </ul>
+  </div>
+
+  <article id="content">
+    <div class="titleArea">
+      <div class="lineMap">
+        <span>home</span> &gt; <span>고객지원</span> &gt; <strong>찾아오시는 길</strong>
+      </div>
+      <h2>찾아오시는 길<span></span></h2>
+      <p>
+        <span>고객과 함께 미래를 향해 나아가는</span> 삼성디스플레이가 되겠습니다.
+      </p>
+    </div>
+
+    <div class="contentArea">
+      <!-- 본문 시작 -->
+      <div class="tabs">
+        <ul class="tab_menu">
+          <li><a class="tab tab1" href="#">기흥캠퍼스(본사)</a></li>
+          <li><a class="tab tab2" href="#">아산1캠퍼스</a></li>
+          <li><a class="tab tab3" href="#">아산2캠퍼스</a></li>
+          <li><a class="tab tab4" href="#">천안캠퍼스</a></li>
+        </ul>
+      </div>
+            
+      <div class="cont cont1">
+        <h3 class="hidden">기흥캠퍼스(본사)</h3>
+
+        <div class="map_cont" id="map1"></div>
+        <div class="location">
+          <dl>
+            <dt>주소 및 연락처<span>기흥캠퍼스(본사)</span></dt>
+            <dd>
+              <ul>
+                <li>
+                  <span>주소</span>
+                  <p>(우) 17113 경기도 용인시 기흥구 삼성로 1 </p>
+                </li>
+                <li>
+                  <span>전화</span>
+                  <p>031-5181-1114</p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>찾아오시는 방법<span>자가용 또는 버스 이용</span></dt>
+            <dd>
+                <ul>
+                    <li>
+                        <span>자가용</span>
+                        <p>기흥캠퍼스 검색 → 경부 고속도로 방면 → 기흥 동탄 IC 앞 좌회전 → 기흥캠퍼스(본사) 도착</p>
+                    </li>
+                    <li>
+                        <span>버스</span>
+                        <p>
+                            <strong>삼성반도체</strong>
+                            <span>331, 3426</span>
+                            <span>1112, 1560</span>
+                        </p>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        </div>
+      </div>
+      
+      <div class="cont cont2">
+        <h3 class="hidden">아산1캠퍼스</h3>
+        <div class="map_cont" id="map2"></div>
+        <div class="location">
+          <dl>
+            <dt>주소 및 연락처<span>아산1캠퍼스</span></dt>
+            <dd>
+              <ul>
+                <li>
+                  <span>주소</span>
+                  <p>(우) 31454 충청남도 아산시 탕정면 삼성로 181</p>
+                </li>
+                <li>
+                  <span>전화</span>
+                  <p>041-535-1114</p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>찾아오시는 방법<span>자가용 또는 버스 이용</span></dt>
+            <dd>
+                <ul>
+                    <li>
+                        <span>자가용</span>
+                        <p>아산1캠퍼스 검색 → 경기남부 고속도로에서 ‘아산’방면으로 오른쪽 방향 → 충남 톨게이트 → 삼성로 181 방면으로 좌회전 → 아산1캠퍼스 도착</p>
+                    </li>
+                    <li>
+                        <span>버스</span>
+                        <p>
+                            <strong>아산1캠퍼스 남문 정류장</strong>
+                            <span>355, 363</span>
+                            <span>8400</span>
+                        </p>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        </div>
+      </div>
+      
+      <div class="cont cont3">
+        <h3 class="hidden">아산2캠퍼스</h3>
+        <div class="map_cont" id="map3"></div>
+        <div class="location">
+          <dl>
+            <dt>주소 및 연락처<span>아산2캠퍼스</span></dt>
+            <dd>
+              <ul>
+                <li>
+                    <span>주소</span>
+                    <p>(우) 31454 충남 아산시 탕정면 탕정로 380-2</p>
+                </li>
+                <li>
+                    <span>전화</span>
+                    <p>041-535-1114</p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>찾아오시는 방법<span>자가용 또는 버스 이용</span></dt>
+            <dd>
+                <ul>
+                    <li>
+                        <span>자가용</span>
+                        <p>아산2캠퍼스 검색 → 경기남부 고속도로에서 ‘아산’방면으로 오른쪽 방향 → 충남 톨게이트 → 탕정로 380 방면으로 우회전 → 아산2캠퍼스 도착</p>
+                    </li>
+                    <li>
+                        <span>버스</span>
+                        <p>
+                            <strong>아산2캠퍼스 북문 정류장</strong>
+                            <span>350, 360</span>
+                            <span>4100</span>
+                            <span>탕정1, 탕정13, 탕정40</span>
+                        </p>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        </div>
+      </div>
+      
+      <div class="cont cont4">
+        <h3 class="hidden">천안캠퍼스</h3>
+        <div class="map_cont" id="map4"></div>
+        <div class="location">
+          <dl>
+            <dt>주소 및 연락처<span>천안캠퍼스</span></dt>
+            <dd>
+              <ul>
+                <li>
+                  <span>주소</span>
+                  <p>(우) 31086 충남 천안시 서북구 번영로 465</p>
+                </li>
+                <li>
+                  <span>전화</span>
+                  <p>041-599-1114</p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>찾아오시는 방법<span>자가용 또는 버스 이용</span></dt>
+            <dd>
+                <ul>
+                    <li>
+                        <span>자가용</span>
+                        <p>천안캠퍼스 검색 → 화산분기점에서 ‘천안’방면으로 오른쪽 방향 → 천안톨게이트 → 번영로 465 방면으로 우회전 → 천안캠퍼스 도착</p>
+                    </li>
+                    <li>
+                        <span>버스</span>
+                        <p>
+                            <strong>천안캠퍼스남문 정류장</strong>
+                            <span>130, 302</span>
+                            <span>5000</span>
+                            <span>연일1, 연일2, 연일3, 연일4, 연일5, 연일9</span>
+                        </p>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+  <? include "../common/sub_footer.html" ?>
+  <script  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8b1dfe047189aae077b01f9d1fba4781"></script>
+  <script src="./js/map.js"></script>
+
+</body>
+</html>

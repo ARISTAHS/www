@@ -1,0 +1,510 @@
+/* 비주얼 영역 */
+.visual{
+  width: 2000px; 
+  height: 990px; 
+  position:relative; 
+  left:50%; 
+  top:0; 
+  margin-left: -1000px;
+  overflow: hidden;
+  background: #000;
+}
+
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px;}
+.gallery li{display:none; position: relative;}
+
+.visual .gallery ul span{
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top:300px;
+  margin-left: -600px;
+  font-size: 44px;
+  font-weight: 500;
+  color: #fff;
+  text-align: right;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.visual .gallery ul span>strong{
+  color: #03509f;
+  font-size: 64px;
+}
+
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.dock{width:330px; position:absolute; left:45%; top:900px;}
+
+.dock .mbutton{ margin-right:15px; cursor:pointer; 
+    display:block; float:left; width:16px; height:16px;
+   background: rgba(255,255,255,.2); border-radius:8px;
+  transition: all .5s}
+
+.dock .ps{ margin-right:15px; margin-top: -5px; cursor:pointer; 
+    display:block; float:left; }
+
+.dock .ps i{color: #fff; font-size: 35px;}
+
+.visual .btn{display: block; position: absolute;  top:420px; cursor:pointer; color: rgba(255,255,255, .3); transition: all .5s;}
+.visual .btnLeft{left:50%; margin-left: -900px;}
+.visual .btnRight{left:50%; margin-left: 830px;}  
+
+.visual .btn:hover{color: #fff;}
+
+
+/* 본문 컨텐츠 영역 */
+#content{width: 1200px; margin: 0 auto;}
+
+#content section{ 
+  margin: 114px auto 0;
+  padding-top: 114px;
+}
+
+#content .more{
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #999;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px 1px rgb(0 0 0 / 15%);
+  width: 122px !important; 
+  margin: 0 auto;
+  padding: 15px 18px;
+}
+
+#content .more:hover{
+  color: #03509f;
+  transform: scale(0.9);
+  /* transition-delay: .2s;
+  transition-duration: .2s; */
+}
+
+
+/* innovative 영역 */
+.innovative div{position: relative;}
+#content .innovative h3{
+  font-family:'Roboto', sans-serif;
+  font-size: 3.750em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0;
+  top: 50px;
+  transition: all 1s ease-in-out;
+}
+
+#content .innovative li{
+  opacity: 0;
+  position: relative;
+  overflow: hidden;
+  right: -600px;
+}
+
+.innovative li dl{
+  overflow: hidden;
+  transition: all .5s;
+}
+.innovative li dl dt{font-size: 2.000em; font-weight: 700; color: #03509f; font-family: 'Roboto', sans-serif;
+  text-align: left; padding-bottom: 40px;}
+.innovative li dl dd{font-size: 1.250em; text-align: left;}
+.innovative li dl dd:hover{color: #069;}
+.innovative li:nth-of-type(2) dl{margin-left: 710px;}
+.innovative li:nth-of-type(2) dl dt{margin-left: 290px;}
+.innovative li:nth-of-type(1) img{position: absolute;top: 0;right: 0; border-radius: 30px; transition: all .5s ease-in-out;}
+.innovative li:nth-of-type(2) img{position: absolute;bottom: 0;left: 0; border-radius: 30px; transition: all .5s ease-in-out}
+.innovative li:nth-of-type(1) img:hover{transform: scale(0.9);}
+.innovative li:nth-of-type(2) img:hover{transform: scale(0.9);}
+.innovative li a{display: block; height: 300px; margin-top: 40px;}
+.innovative li:nth-of-type(1) a{background: url(../images/arrow_secon.png) 0 240px no-repeat;}
+.innovative li:nth-of-type(2) a{background: url(../images/arrow_secon.png) 1055px 255px no-repeat;}
+
+ #content .innovative li:nth-of-type(1) {
+  transition: transform .4s ease-in-out, right 1s ease-in-out, opacity 1s;
+}
+#content .innovative li:nth-of-type(2) {
+  transition: transform .4s ease-in-out, right 1.5s ease-in-out, opacity 1s;
+}
+#content .innovative li.moved {
+  right: 0px;
+  opacity: 1;
+}
+
+
+
+/* Product */
+
+#content .product{
+ position:relative;
+}
+.product li{opacity: 0;}
+.product li{
+  transition: all 4s ease-in-out, opacity 1s;
+}
+.product li.moved {
+  opacity: 1;
+}
+.product h3{
+  position: relative;
+  font-family:'Roboto', sans-serif;
+  font-size: 3.750em;
+  font-weight: 700;
+  text-align: right;
+  margin: 0 40px;
+  opacity: 0;
+  right: -250px;
+  transition: all 1s ease-in-out;
+}
+
+#content .product p{
+  position: relative;
+  font-size: 1.250em;
+  font-weight: 700;
+  text-align: right;
+  margin: 20px 40px;
+  opacity: 0;
+  right: -300px;
+  transition: all 2s ease-in-out;
+}
+
+#content .product .more{
+  position: absolute;
+  right: 40px;
+  top: 260px;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+#content .product .collage{margin-top: 150px; overflow: hidden;}
+#content .product li{float: left; height: 250px; overflow: hidden; position: relative;}
+#content .product li:nth-child(1){width: 50%; height: 500px; background: url(../images/product01.jpg) no-repeat;background-size: cover;  }
+#content .product li:nth-child(2){width: 25%; background: url(../images/product03.jpg) no-repeat;background-size: cover; }
+#content .product li:nth-child(3){width: 25%; background: url(../images/product05.jpg) no-repeat;background-size: cover; }
+#content .product li:nth-child(4){width: 50%; background: url(../images/product04.jpg) no-repeat;background-size: cover }
+#content .product li:nth-child(5){width: 70%; background: url(../images/product02.jpg) no-repeat;background-size: cover}
+#content .product li:nth-child(6){width: 30%; background: url(../images/product06.jpg) no-repeat;background-size: cover }
+#content .product dl{position:absolute; width: 100%; height: 250px;background:rgba(0,0,0,0);
+ left:0; top:0; transition: all .5s;}
+#content .product li:nth-child(1) dl{height:500px ;}
+#content .product dt{font-size: 2.5em; color:#fff; text-align: center;
+   margin-top:80px; transition: all .5s;}
+   #content .product li:nth-child(1) dt{margin-top: 200px;}
+#content .product dd{font-size: 1.1em; color: #fff; text-align:center;
+ line-height: 1.5em;margin:20px;opacity: 0; transition: all .5s;}
+#content .product li:hover dt{margin-top: 40px; color: orange;}
+#content .product li:nth-child(1):hover dt{margin-top: 130px;}
+#content .product li:hover dd{opacity: 1;}
+#content .product li:hover dl{background:rgba(0,0,0,.6)}
+
+/* social 영역 */
+
+.social{
+  height: 710px;
+  position:relative;
+  
+}
+.social .box1{
+  position: relative;
+  width: 1000px;
+  overflow: hidden;
+  left: 0;
+  margin: 0 auto;
+}
+.social .box2{
+  width: 10000px;
+  position: relative;
+  left: -20px;
+  overflow: hidden;
+}
+
+.social h3{
+  position: relative;
+  font-family:'Roboto', sans-serif;
+  font-size: 3.750em;
+  font-weight: 700;
+  text-align: center;
+  bottom: 60px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+#content .social ul{
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+#content .social ul li{
+  display:block;
+  float: left;
+  margin-top: 100px;
+  margin-bottom:47px;
+  border-radius: 30px;
+  position: relative;
+  bottom: -200px;
+  opacity: 0;
+  margin-left: 20px;
+}
+
+#content .social ul li img{
+  width: 230px;
+  height: 150px;
+  border-radius: 30px 30px 0 0 ;
+}
+
+#content .social ul li dl{
+  width: 230px;
+  height: 150px;
+}
+
+#content .social ul li a:hover dt, 
+#content .social ul li a:hover dd{
+  color:#03509f
+}
+
+#content .social ul li dt{
+  font-size: 1em;
+  font-weight: 700;
+  color: #333;
+  padding: 15px 15px;
+  letter-spacing: -1px;
+}
+#content .social ul li dd{
+  font-size: 0.875em;
+  font-weight: 500;
+  color: #666;
+  padding:0 15px 10px 15px;
+}
+
+#content .social ul li:first-of-type{
+  transition: transform .4s ease-in-out, bottom 1s ease-in-out, opacity 1s;
+}
+
+#content .social ul li:last-of-type{
+  transition: transform .4s ease-in-out, bottom 2.5s ease-in-out, opacity 1s;
+}
+
+#content .social ul li:nth-of-type(2){
+  transition: transform .4s ease-in-out, bottom 1.5s ease-in-out, opacity 1s;
+}
+
+#content .social ul li:nth-of-type(3){
+  transition: transform .4s ease-in-out, bottom 2s ease-in-out, opacity 1s;
+}
+
+.social .left,
+.social .right{
+  display: block;
+  color: #666;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.social .left i,.social .right i{
+  font-family:"fontawesome";
+  font-style: normal;
+  font-size: 3.750em;
+  color: #666;
+}
+
+.social .left{
+  left: 0;
+}
+
+.social .right{
+  right: 0;
+}
+#content .social li.moved{
+  opacity: 1;
+  bottom:0;
+}
+.social .more{
+  clear: both;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+
+/* news 영역 */
+
+#content .news{
+  width: 2000px;
+  position: relative;
+  margin-top: 114px;
+  background: #f8f8f8;
+  left: 50%;
+  top: 0;
+  margin-left: -1000px;
+  padding-bottom: 100px;
+}
+
+#content .news h3{
+  font-family:'Roboto', sans-serif;
+  font-size: 3.750em;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+#content .news p{
+  font-size:2.000em;
+  font-weight: 700;
+  color:#333;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  bottom: -60px;
+  opacity: 0;
+  transition: all 1.3s ease-in-out;
+}
+
+#content .news div{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  height: 470px;
+}  
+
+#content .news ul li{
+  width: 480px;
+  height: 350px;
+  border-radius: 20px;
+  display: block;
+  background: #fff;
+  box-shadow: 5px 10px 20px 4px rgba(0, 0, 0, .2);
+  opacity: 0;
+  float: left;
+  position: relative;
+  top: 100px;
+}
+
+#content .news ul li:nth-of-type(1){
+  left:10%;
+  transition: transform .4s ease-in-out, top 1s ease-in-out, opacity 1s;
+}
+
+#content .news ul li:nth-of-type(2){
+  left:15%;
+  transition: transform .4s ease-in-out, top 1.5s ease-in-out, opacity 1s;
+}
+
+#content .news ul li:nth-of-type(3){
+  left: 20%;
+  transition: transform .4s ease-in-out, top 2s ease-in-out, opacity 1s;
+}
+
+#content .news ul li dt{
+  font-size: 1.375em;
+  font-weight: 700;
+  color:#333;
+  padding: 50px 50px 0 50px;
+  letter-spacing: -1px;
+}
+
+#content .news ul li dd:nth-of-type(odd){
+  font-size: 1em;
+  font-weight: 400;
+  color:#333;
+  padding: 35px 50px 40px 50px;
+}
+
+#content .news ul li dd:nth-of-type(even){
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #999;
+  padding: 0 50px 0 50px;
+  position: relative;
+}
+
+#content .news ul li dd:nth-of-type(even) img{
+  position:absolute;
+  right: 50px;
+  top: 0;
+}
+
+#content .news ul li:hover{
+  transform:scale(1.1);
+}
+
+#content .news ul li a:hover dt{
+  color: #03509f;
+}
+
+.news .more{
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+
+/* employ 영역 */
+
+#content .employ{
+  position: relative;
+  width: 1200px;
+  margin-bottom: 200px;
+}
+
+#content .employ .text{
+  width: 640px;
+  position: absolute;
+  left:100px;
+  top: 290px;
+  background: #fff;
+  border-radius: 20px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 1.4s ease-in-out;
+}
+
+#content .employ .text h3{
+  font-family:'Roboto', sans-serif;
+  font-size: 3.750em;
+  font-weight: 700;
+  text-align: center;
+  padding: 48px 136px 0 56px;
+  opacity: 0;
+  transition: opacity 1.6s ease-in-out;
+}
+
+#content .employ .text p{
+  font-size: 1.250em;
+  font-weight: 700;
+  color:#333;
+  padding: 35px 50px 40px 50px;
+  letter-spacing: -1px;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out;
+}
+
+#content .employ .img{
+  position: relative;
+  background: url(../images/employ.jpg)no-repeat;
+  left: -400px;
+  width: 2000px;
+  height: 500px;
+  margin: 50px 0;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+#content .employ .more{
+  position: relative;
+  right: -160px;
+  bottom: 15px;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+

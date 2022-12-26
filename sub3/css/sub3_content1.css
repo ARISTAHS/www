@@ -1,0 +1,169 @@
+/* 본문 영역 */
+
+#content .titleArea h2 span{
+  width: 200px;
+}
+
+#content .titleArea p span,
+.contentArea div:nth-of-type(2) p span{
+  color: #069;
+}
+
+.contentArea div:nth-of-type(2) ul li span{
+  display: block;
+  width:20px;
+  height: 5px;
+  background: #03509f;
+  margin: 5px auto;
+}
+
+.contentArea div:nth-of-type(1),
+.contentArea div:nth-of-type(1) ul li{
+  margin-top: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contentArea div:nth-of-type(1) p{
+  font-size: 1.875em;
+  color: #333;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.contentArea div:nth-of-type(1)>p{
+  text-align: center;
+}
+
+.contentArea div:nth-of-type(1) ul li{
+  background: url(../images/content1/bar.jpg) 50% 20px no-repeat;
+  height: 340px;
+  margin-bottom: 100px;
+}
+
+.contentArea div:nth-of-type(1) ul li p:nth-of-type(1){
+  position: absolute;
+  left: 50px;
+  top: 40px;
+}
+
+.contentArea div:nth-of-type(1) ul li p:nth-of-type(2){
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+
+.contentArea div:nth-of-type(1) ul li p:nth-of-type(3){
+  position: absolute;
+  left: 110px;
+  top: 250px;
+}
+
+.contentArea div:nth-of-type(1) ul li p:nth-of-type(4){
+  position: absolute;
+  right: 180px;
+  top: 250px;
+}
+
+.contentArea div:nth-of-type(2){
+  margin-top: 150px;
+}
+
+.contentArea div:nth-of-type(2) p span{
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.contentArea div:nth-of-type(2) p{
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #333;
+  white-space: pre-line;
+  padding: 0 52px;
+  margin-bottom: 80px;
+} 
+
+.contentArea div:nth-of-type(2){
+  height: 900px;
+}
+
+.contentArea div:nth-of-type(2) ul{
+  position: relative;
+}
+
+.contentArea div:nth-of-type(2) ul::before{
+  content: '';
+  background: url(http://127.0.0.1:5500/sub3/css/../images/content1/동그라미.jpg) 0 0 no-repeat, url(http://127.0.0.1:5500/sub3/css/../images/content1/동그라미.jpg) 1000px 150px no-repeat;
+  background-size: 500px;
+  position: absolute;
+  left: -146px;
+  top: -55px;
+  width: 2000px;
+  height: 1000px;
+}
+
+
+.contentArea div:nth-of-type(2) ul li:nth-of-type(2){
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+.contentArea div:nth-of-type(2) ul li:nth-of-type(1) span{
+  position: absolute;
+  top: 10px;
+  left: 165px;
+}
+
+.contentArea div:nth-of-type(2) ul li:nth-of-type(2) span{
+  position: absolute;
+  top: 10px;
+  left: 165px;
+}
+
+.contentArea div:nth-of-type(2) ul li dl{
+  position: relative;
+  width: 600px;
+  height: 500px;
+}
+
+.contentArea div:nth-of-type(2) ul li dt{
+  font-size: 1.500em;
+  font-weight: 700;
+  color: #333;
+  padding-left: 200px;
+  margin-bottom: 50px;
+}
+
+.contentArea div:nth-of-type(2) ul li dd{
+  font-size: 1.000em;
+  font-weight: 700;
+  color: #fff;
+  background: #069;
+  width: 199px;
+  height: 80px;
+  text-align: center;
+  padding: 28px;
+}
+
+.contentArea div:nth-of-type(2) ul li dd:nth-of-type(1){
+  position: absolute;
+  top: 90px;
+  left: 200px;
+}
+
+.contentArea div:nth-of-type(2) ul li dd:nth-of-type(2){
+  position: absolute;
+  top: 200px;
+  left: 85px;
+}
+
+.contentArea div:nth-of-type(2) ul li dd:nth-of-type(3){
+  position: absolute;
+  top: 200px;
+  right: 85px;
+}
+
+

@@ -1,0 +1,120 @@
+/* 본문 */
+
+#content .titleArea h2 span{
+  width: 150px;
+}
+
+#content .titleArea{
+  margin-bottom: 100px;
+}
+
+.contentArea section{
+  margin-bottom: 100px;
+  position: relative;
+}
+.contentArea section h3{
+  font-size: 2.000em;
+  color: #03509f;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contentArea .notice p{
+  font-size: 1.125em;
+  color: #666;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2em;
+}
+.contentArea .notice p span{
+  color: #03509f;
+}
+
+.contentArea section ul li:nth-of-type(1){
+  border: dashed 2px #d3d3d3;;
+  border-radius: 130px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+.contentArea section ul img{
+  width: 200px;
+  height: 200px;
+  border: 3px solid #069;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+} 
+.newcomer ul li:nth-of-type(1) a span,
+.career ul li:nth-of-type(1) a span{
+  position: absolute;
+  top: 35%;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  display: block;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+
+.newcomer ul li:nth-of-type(1) a:nth-of-type(1) span{left: 155px;}
+.newcomer ul li:nth-of-type(1) a:nth-of-type(2) span{ left: 355px;}
+.newcomer ul li:nth-of-type(1) a:nth-of-type(3) span{left: 565px;}
+.newcomer ul li:nth-of-type(1) a:nth-of-type(4) span{left: 765px;}
+.newcomer ul li:nth-of-type(1) a:nth-of-type(5) span{left: 970px;}
+
+
+.career ul li:nth-of-type(1) a:nth-of-type(1) span{left: 21.5%;}
+.career ul li:nth-of-type(1) a:nth-of-type(2) span{left: 38.5%;}
+.career ul li:nth-of-type(1) a:nth-of-type(3) span{left: 55.5%;}
+.career ul li:nth-of-type(1) a:nth-of-type(4) span{left: 72.5%;}
+
+.contentArea section ul li:nth-of-type(1)::before{    
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #03509f;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 124px;
+  transform: translateX(-60%);}
+
+.contentArea section ul li:nth-of-type(1)::after{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #03509f;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  top: 124px;
+  transform: translateX(60%);
+}
+
+.contentArea section ul li:nth-of-type(1):hover img{
+  transform: scale(.8);
+  border-radius: 0%;
+  background: rgba(0, 0, 0, .5);
+}
+.contentArea section ul li:nth-of-type(1):hover a span{
+  top: 43%;  
+  opacity: 1;
+}
+
+.contentArea section ul li:nth-of-type(2) dl{text-align: center;}
+.contentArea section ul li:nth-of-type(2) dt{
+  font-size: 1.500em;
+  color: #03509f;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.contentArea section ul li:nth-of-type(2) dd{
+  margin-bottom: 30px;
+  font-size: 1.125em;
+  color: #666;
+  font-weight: 500;
+}
+

@@ -1,0 +1,10 @@
+/* 본문 영역 */
+
+#content .titleArea h2 span{
+  width: 150px;
+}
+
+#content .titleArea p span{
+  color: #069;
+}
+

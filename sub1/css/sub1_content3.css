@@ -1,0 +1,131 @@
+/* 본문 영역 */
+
+#content .contentArea{
+  position: relative;
+}
+
+.contentArea strong{
+  color:#069;
+}
+
+.contentArea div:nth-of-type(1){
+  width: 1200px;
+  height: 1070px;
+  margin-top: 130px;
+  margin-bottom: 140px;
+  background: url(../images/content3/content1.jpg) 50% bottom no-repeat;
+  background-size: 1050px 490px;
+} 
+
+.contentArea div:nth-of-type(1)>p{
+  font-size: 1.875em;
+  font-weight: 500;
+  text-align: center;
+  white-space: pre-line;
+  margin-left: 250px;
+  width: 700px;
+}
+
+.contentArea div:nth-of-type(1) ul{
+  margin: 130px 45px 30px 45px;
+  overflow: hidden;
+}
+
+.contentArea div:nth-of-type(1) li{
+  width: 370px;
+  height: 290px;
+  display: block;
+}
+
+.contentArea div:nth-of-type(1) li span{
+  display: block;
+  width:210px;
+  height: 5px;
+  background: #069;
+  margin: 30px auto 0;
+}
+
+.contentArea div:nth-of-type(1) li:nth-of-type(1) span{
+  margin-left:20px;
+}
+
+.contentArea div:nth-of-type(1) li:nth-of-type(1){
+  padding-right:30px;
+  float: left;
+}
+
+.contentArea div:nth-of-type(1) li:nth-of-type(2){
+  float: left;
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+.contentArea div:nth-of-type(1) li:nth-of-type(3){
+  float:left;
+  padding-left:30px;
+}
+
+.contentArea div:nth-of-type(1) li dt{
+  font-size: 1.750em;
+  font-weight: 500;
+  color: #069;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.contentArea div:nth-of-type(1) li:nth-of-type(1) dt{
+  padding-right: 50px;
+}
+
+.contentArea div:nth-of-type(1) li dd{
+  text-align: justify;
+  white-space: pre-line;
+  color: #666;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.contentArea div:nth-of-type(1) li dd:nth-of-type(1){
+  padding:0 32px;
+}
+
+.contentArea div:nth-of-type(2) ul{
+  background: url(../images/content3/content2.jpg) 0 35% no-repeat;
+  background-size: 410px 400px;
+}
+
+.contentArea div:nth-of-type(2) li{
+  background:  url(../images/content3/content3.JPG) 95% 92% no-repeat;
+  background-size: 406px 345px;
+}
+
+.contentArea div:nth-of-type(2) li dl{
+  width: 600px;
+  margin: 0 0 65px 350px;
+}
+
+.contentArea div:nth-of-type(2) li dt{
+  font-size: 2.250em;
+  font-weight: 500;
+  color: #069;
+  text-align: left;
+  padding: 0 50px;
+}
+
+.contentArea div:nth-of-type(2) li dt span{
+  display: block;
+  width:200px;
+  height: 5px;
+  background: #069;
+  margin: 10px 0 10px;
+}
+
+.contentArea div:nth-of-type(2) li dd{
+  font-size: 1.250em;
+  color: #333;
+  text-align: left;
+  white-space: pre-line;
+  padding: 0 50px ;
+  line-height: 35px;
+}

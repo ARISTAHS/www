@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{background:#f8f8f8;}
+header h1 .logo{ margin: 100px auto 0; display: block; width: 500px; overflow: hidden;}
+header h1 .logo img{width: 100%;}
+
+#content{width: 600px; margin: 50px auto; padding: 60px; background: white; box-shadow: 0 0 40px #0000001a; position: relative;}   
+#content .title{position: relative;margin-bottom: 25px;}
+#content .title h2{font-size: 1.6rem; text-align: center; margin: 0 auto; font-weight: 500;margin-bottom: 5px;}
+#content .title .tex{text-align: center; margin: 0 auto;}
+
+/*  */
+
+/* content */
+.row{margin-bottom: 16px;}
+.row label{display: block; font-weight: 500; font-size: 0.9rem; margin: 0 0 8px 4px;}
+input, textarea, select{width: 100%; height: 56px; border: 1px solid #ececec; border-radius: 4px; background: rgba(255, 255, 255, .5); padding: 12px 16px 13px 16px; box-sizing: border-box; font-size: 1.125em; font-weight: 500;}
+input:focus, textarea:focus{outline-color: rgba(25, 121, 189, .5);}
+select, .hp{width: 30.4%;}
+select, .mail{width: 304px;}
+.symbol{margin: 0 4px;}
+.essential{color: #D82723}
+input::placeholder, textarea::placeholder{color: #C1C1C1; font-weight: 300; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+#content .disabled_input{background-color: #f8f8f8;}
+
+/* button */
+#button{margin-top: 32px; overflow: hidden; position: relative;}
+#button .find{display: block; width: 100%; padding: 16px 0 17px; border-radius: 4px; border: 1px solid #03509f; background: #03509f; cursor:pointer;font-weight: 700; font-size: 1em; color: #fff; text-align: center;}
+
+/* find_wrap */
+.find_wrap{text-align: center; margin-top: 24px; overflow: hidden;}
+.find_wrap li{width: 50%; float: left; position: relative;}
+.find_wrap li:nth-child(2){color: #666;}
+.find_wrap li:nth-child(2)::before{content: ''; width: 2px; height: 25px; background: #03509f; position: absolute; left: -16px;}
+.find_wrap a{display: block; font-size: 0.85rem; font-weight: 400; text-align: center;} 
+
+/* join */
+.join{text-align: center; margin-top: 32px;}
+.join span{color: #666; font-weight: 500; display: block; float: left; margin-left: 100px; }
+.join a{display:block; width: 50px; padding-left:9px; overflow: hidden;}
+.join a i{font-family: 'fontawesome'; font-size: 1.5rem; font-weight: normal; color: #03509f;}
+
+/* select */
+select {
+    background:url(../images/arrow2.png) no-repeat 90% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance : none;
+}
+select::-ms-expand {
+    display: none;
+}
+
+
+/* loadtext */
+#loadtext, #loadtext2{color: #D82723; border-color: #D82723; margin: 40px 40px 0; font-size: 0.875em;} 

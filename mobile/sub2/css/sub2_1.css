@@ -1,0 +1,98 @@
+/* 본문 */
+
+
+.contentArea .first_content,
+.contentArea .second_content{
+  width: 100%;
+  border-top: 1px solid #999;
+}
+
+.contentArea .first_content div,
+.contentArea .second_content div{
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.first_content .sub_title1,
+.second_content .sub_title3{
+  font-size: 2.125em;
+  font-weight: 500;
+  color: #03509f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* .first_content .sub_title1 span,
+.second_content .sub_title3 span{
+  display: block;
+  width:190px;
+  height: 5px;
+  background: #03509f;
+  margin: 5px 0 0 10px;
+} */
+
+.first_content div:first-of-type p,
+.second_content div:first-of-type p{
+  line-height: 50px;
+  font-size: 1.125em;
+  color: #666;
+  font-weight: 500;
+  text-align: left;
+  padding: 0 25px;
+  white-space: pre-line;
+} 
+
+.first_content .sub_title2,
+.second_content .sub_title4{
+  font-size: 1.875em;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.first_content div:last-of-type,
+.second_content div:last-of-type{
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.first_content div:last-of-type ul li,
+.second_content div:last-of-type ul li{ 
+  text-align: center;
+  padding: 0 10px 30px;
+  white-space: pre-line;
+}
+
+.first_content div:last-of-type ul li span,
+.second_content div:last-of-type ul li span{
+  display: block;
+  font-weight: 700;
+  color: #333;
+  font-size: 1.250em;
+  padding-bottom: 20px;
+  /* text-align: left; */
+}
+
+/* .first_content div:last-of-type ul li:nth-of-type(2) span,
+.second_content div:last-of-type ul li:nth-of-type(odd) span{
+  text-align: left;
+} */
+
+.first_content div:last-of-type ul li p,
+.second_content div:last-of-type ul li p{
+  font-size: 1em;
+  color: #666;
+}
+
+/* .first_content div:last-of-type ul li:nth-of-type(odd) p,
+.second_content div:last-of-type ul li:nth-of-type(even) p{
+  text-align: left;
+  padding: 0;
+}
+
+.first_content div:last-of-type ul li:nth-of-type(even) p,
+.second_content div:last-of-type ul li:nth-of-type(odd) p{
+  text-align: left;
+  padding: 0;
+} */
+

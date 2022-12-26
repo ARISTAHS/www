@@ -1,0 +1,156 @@
+/* 기업 소개 본문 영역 */
+
+#content .contentArea{
+  position: relative;
+  height: 2427px;
+}
+#content .titleArea h2 span{
+  width: 155px;
+}
+
+#content .contentArea div:nth-of-type(1){
+  margin: 85px 0;
+  width: 2000px;
+  position: absolute;
+  top: 0;
+  left:50%;
+  margin-left: -1000px;
+  background: #f8f8f8;
+  overflow: hidden;
+  clear: both;
+}
+
+.contentArea div:nth-of-type(1) ul{
+  width: 100%;
+  height: 450px;
+  margin: 0 20%;
+  padding: 74.5px 0;
+}
+
+.contentArea div:nth-of-type(1) li{
+ float: left;
+ padding:0 37.5px;
+}
+
+.contentArea div:nth-of-type(1) li img{
+  border-radius: 100%;
+}
+
+.contentArea div:nth-of-type(1) li p{
+  text-align: center;
+}
+
+.contentArea div:nth-of-type(1) li p:first-of-type{
+  font-weight: 400;
+  font-size: 1.125em;
+  padding-top: 20px;
+}
+
+.contentArea div:nth-of-type(1) li p:last-of-type{
+  font-weight: 700;
+  font-size: 1.125em;
+  color: #069;
+  padding-top: 15px;
+}
+
+.contentArea div:nth-of-type(2){
+  overflow: hidden;
+  position: relative;
+  top: 670px;
+  left: 0;
+}
+
+.contentArea div:nth-of-type(2) ul{
+  width: 100%;
+}
+
+.contentArea div:nth-of-type(2) li:not(:last-of-type){
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contentArea div:nth-of-type(2) li img{
+  border-radius: 20px;
+}
+
+.contentArea div:nth-of-type(2) li p{
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #333;
+  text-align: justify;
+  line-height: 2.2em;
+  width: 530px;
+}
+
+.contentArea div:nth-of-type(2) li p strong{
+  font-size: 2.000em;
+  font-weight: 700;
+  color:#006699;
+}
+
+.contentArea div:nth-of-type(2) li:nth-of-type(odd) img{
+  float: left;
+  clear: both;
+}
+
+.contentArea div:nth-of-type(2) li:nth-of-type(odd) p:not(:last-of-type){
+  float: right;
+}
+
+.contentArea div:nth-of-type(2) li:nth-of-type(1) p{
+  position: absolute;
+  top: 80px;
+  right: 14px;
+}
+
+.contentArea div:nth-of-type(2) li:nth-of-type(3) p{
+  position: absolute;
+  top: 50px;
+  right: 55px;
+}
+
+.contentArea div:nth-of-type(2) li:nth-of-type(even) img{
+  float: right;
+  clear: both;
+}
+.contentArea div:nth-of-type(2) li:nth-of-type(even) p{
+  float: left;
+}
+
+.contentArea div:nth-of-type(2) li:nth-of-type(2) p{
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.contentArea div:nth-of-type(2) li:nth-of-type(4) p{
+  position: absolute;
+  top: 14px;
+  left: 0;
+}
+
+.contentArea div:nth-of-type(2) li:last-of-type{
+ padding: 10px 167.5px 103px;
+ position: relative;
+}
+
+.contentArea div:nth-of-type(2) li:last-of-type::after{
+ content: '';
+ width: 1197px;
+ height: 206px;
+ position: absolute;
+ top: 0;
+ right:0;
+ background: url(../images/content1/content05.jpg) right bottom no-repeat;
+ background-size: 100% 205px;
+ z-index: -1;
+ opacity: .7;
+}
+
+.contentArea div:nth-of-type(2) li:last-of-type p{
+  text-align: center;
+  width: 100%;
+}
+
+ 

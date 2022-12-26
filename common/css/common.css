@@ -1,0 +1,260 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: "Noto Sans KR", Dotum,"굴림",Gulim, sans-serif; font-size: 16px;color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+.hidden{display:block; position:absolute; left:-1000%; width:1px; height:1px; overflow:hidden; color:#fff;}
+#skipNav{position: relative; width: 100%; overflow: hidden; z-index: 60;}
+#skipNav a{display: block; height: 1px; margin-bottom: -1px; font-size: 1.2em;
+color: #333; overflow: hidden; text-align: center;}
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{
+  height: auto; padding: 10px 0; background: #f2f2f2;}
+
+.wrap{width:100%; overflow:hidden;}
+*{box-sizing: border-box;}
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+ /* header 공통영역 */ 
+#headerArea{
+  height: 156px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  overflow: hidden;
+  width: 100%;
+  transition: background .3s;
+}
+
+
+#headerArea .headerInner{
+  width:1200px; 
+  margin:0 auto; 
+ position:relative;
+}
+
+.headerInner .logo{
+  width: 100%; 
+  padding-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+.headerInner .logo a{
+  display: block;
+  text-align: center;
+  width: 100%;
+  color:#fff
+}
+
+#gnb .dropmenu > li{
+  float: left;
+}
+#gnb .dropmenu li.menu a.depth1{
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin:0 auto;}
+  
+.topmenu{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 150px; 
+  right: 30px; top:50px;
+}
+
+.topmenu a{
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  display: block;
+}
+#gnb{clear:both;width:1200px;} 
+	
+#gnb ul.dropmenu{float:left; width: 100%;}
+#gnb ul.dropmenu li.menu{position:relative; width:16.66%; height: 70px;}
+#gnb ul.dropmenu li a.depth1{display:block; padding: 15px 0;
+        text-align: center; transition: all .5s;}
+
+  /* 2depth */
+#gnb ul.dropmenu li.menu ul{width:100%; position:absolute;top:70px;left:0; height:190px; padding:15px 0; line-height:2em; display:none;}
+
+#gnb ul.dropmenu li ul li{ text-align:center; font-weight:bold;}
+#gnb ul.dropmenu li ul li a{display:block;  color:#666; transition: all .5s; }
+#gnb ul.dropmenu li ul li a:hover{ background: #03509f; border-radius: 5px; }
+
+
+
+
+
+/* footer 공통영역 */ 
+#footerArea{
+  background:#f8f8f8; 
+  height: 250px; 
+  width: 100%; position: relative;
+}
+#footerArea::after{content: ''; display: block;
+    width: 100%; height: 1px; background: #ccc; position: absolute;
+   left:0; top:60px; z-index: 10;}
+
+#footerArea .footerInner{
+  width:1200px; 
+  margin:0 auto;
+  position: relative;
+  height: 250px; 
+}
+
+#footerArea .footerInner .logo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #333;
+  padding: 92px 40px 135px 20px;
+  position: absolute;
+}
+
+#footerArea .footerInner .footertop ul{
+  padding-top: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+#footerArea .footerInner .footertop li{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 0.875em;
+  color: #333;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+ #footerArea .family{
+  width: 180px;
+  position: relative;
+  right: -80%;
+  background: #ccc;
+  color: #333;
+ }
+
+#footerArea .family .arrow{
+  display: block;
+  text-align: center;
+  height: 45px;
+  position: relative;
+  transition: all .5s;
+}
+
+#footerArea .family .arrow i{
+  font-family:"fontawesome";
+  font-size: 32px;
+  font-style: normal;
+  position: relative;
+  top: 5px;
+  right: -15px;
+}
+
+#footerArea .family .arrow:hover{
+ background: #03509f;
+ color: #fff;
+}  
+
+#footerArea .family .aList{
+  width: 180px;
+  position: absolute;
+  top:-180px;
+  left:0;
+  display: none;
+  z-index: 11;
+}
+
+.family .aList li{line-height:1.5em; border-bottom:1px solid #ccc;}
+
+#footerArea .family .aList li a{
+  display: block;
+  padding: 10px;
+  background: #03509f;
+  transition: all .5s ease-out;
+  text-align: center;
+  color: #fff;
+}
+
+#footerArea .family .aList a:hover{
+  background: #03509f;
+  color:#fff;
+} 
+
+#footerArea .footerInner .footermid address{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  color: #333;
+  display: inline-block;
+  text-align: justify;
+  padding: 0 40px 30px 40px;
+  position: absolute;
+  left: 332px;
+  top: 92px;
+}
+
+#footerArea .copy{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #666;
+  display: inline-block;
+  text-align: justify;
+  position: absolute;
+  left: 370px;
+  top: 206px;
+}
+
+#footerArea .footerInner .snsicon {
+  width: 250px;
+  position: absolute;
+  right: 0;
+  top: 160px;
+}
+
+#footerArea .footerInner .snsicon li{
+  display: inline-block;
+  font-size: 40px;
+  padding: 0 15px 0 15px;
+}
+
+#footerArea .footerInner .move i{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  font-size:70px;
+  font-family:"fontawesome";
+  font-style: normal;
+  color: #069;
+}
+

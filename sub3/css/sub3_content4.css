@@ -1,0 +1,104 @@
+/* 본문 영역 */
+
+#content .titleArea h2 span{
+  width: 160px;
+}
+
+#content .titleArea p span{
+  color: #069;
+  font-weight: 500;
+}
+
+.contentArea section{
+  margin: 100px auto;
+  text-align: center;
+}
+
+.contentArea div{
+  margin-bottom: 50px;
+}
+
+.contentArea section h3{
+  font-size: 2.250em;
+  font-weight: 500;
+  color: #069;
+}
+
+.contentArea section p{
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #666;
+  margin-top: 40px;
+}
+
+.contentArea div h4{
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #069;
+  text-align: center;
+}
+
+.contentArea div h4:nth-of-type(1){
+  margin-bottom: 50px;
+}
+
+.contentArea div ul:nth-of-type(1){
+  background: url(../images/content4/bar.jpg) 33.33% 0 no-repeat,
+  url(../images/content4/bar.jpg) 66.66% 0 no-repeat;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.contentArea div ul:nth-of-type(2){
+  background: url(../images/content4/bar.jpg) 33.33% 0 no-repeat,
+  url(../images/content4/bar.jpg) 66.66% 0 no-repeat,
+  url(../images/content4/bar.jpg) 50% 260px no-repeat;
+  height: 590px;
+  clear: both;
+  margin-top: 100px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.contentArea div ul:nth-of-type(1) li dl,
+.contentArea div ul:nth-of-type(2) li:nth-of-type(1),
+.contentArea div ul:nth-of-type(2) li:nth-of-type(2),
+.contentArea div ul:nth-of-type(2) li:nth-of-type(3){
+  width: 400px;
+  float: left;
+  text-align: center;
+}
+
+.contentArea div ul:nth-of-type(1) li dt,
+.contentArea div ul:nth-of-type(2) li dt{
+  font-size: 1.500em;
+  color: #333;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.contentArea div ul:nth-of-type(2) li:nth-of-type(4),
+.contentArea div ul:nth-of-type(2) li:nth-of-type(5){
+  position: relative;
+}
+
+.contentArea div ul:nth-of-type(2) li:nth-of-type(4) dl,
+.contentArea div ul:nth-of-type(2) li:nth-of-type(5) dl{
+  clear: both;
+  width: 600px;
+  text-align: center;
+}
+
+.contentArea div ul:nth-of-type(2) li:nth-of-type(4) dl{
+  position: absolute;
+  left: 100px;
+  top: 260px;
+}
+
+.contentArea div ul:nth-of-type(2) li:nth-of-type(5) dl{
+  position: absolute;
+  right: 100px;
+  top: 260px;
+}
+

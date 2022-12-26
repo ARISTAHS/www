@@ -1,0 +1,32 @@
+/* 본문 시작 */
+
+.visual h3{margin-left: -40px;}
+#content .titleArea h2 span{width: 70px;}
+
+#content .titleArea{margin-bottom: 100px;}
+
+.contentArea section h3{font-size: 32px;color: #069;font-weight: 500;margin-bottom: 30px;}
+.contentArea section p{font-size: 18px;color: #333;font-weight: 500; text-align: left;}
+
+.faq_wrap{margin-bottom: 130px;}
+.faq_wrap::after{content:''; display: block; clear: both;}
+
+.faq_wrap span{float:right; position:relative; background:#03509f;}
+.faq_wrap span::before{content:''; display: block; position:absolute; left:0; top:0; width: 0; height: 100%; background:#069; transition:width .3s;}
+.faq_wrap span:hover::before{width:100%;}
+.faq_wrap .all{display:block; position:relative; width: 150px; height: 50px; color:#fff; line-height: 50px; padding-left:27px; box-sizing:border-box; /*background:url(../images/contents4/select_w.png) 90% 50% no-repeat;*/ z-index:3;}
+
+
+.faq_wrap ul{float:left; width: 100%; border-top:2px solid #333; margin:30px 0 0; font-size:1.125rem;}
+.faq_wrap ul li{border-bottom:1px solid #e5e5e5;}
+.faq_wrap ul li p{position:relative; text-align:justify; padding-left:120px;}
+.faq_wrap ul li p::before{content:'Q'; position:absolute; left:65px; top:25px; font-size:1.5625rem; font-weight:700; color:#069;}
+
+.faq_wrap ul li p:nth-child(1){}
+.faq_wrap ul li p:nth-child(1) > a{display:block; padding:30px 120px 30px 30px; font-size:1.25rem; 
+  /* background:url(../images/content2/arrow_down.png) 97% 50% no-repeat; background-size:auto 12px;*/} 
+
+.faq_wrap ul li p:nth-child(2){padding:30px 120px 30px 150px; border-top:1px dotted #eee; background:#f8f8f8; display: none;}
+.faq_wrap ul li p:nth-child(2)::before{content:'A'; color:#999;}
+
+/* .faq_wrap ul li.on p:nth-child(1) > a{background-image:url(../images/content2/arrow_up.png);} */

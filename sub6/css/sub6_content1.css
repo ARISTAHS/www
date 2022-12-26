@@ -1,0 +1,8 @@
+/* 본문 시작 */
+#content .titleArea h2 span{
+  width: 110px;
+}
+
+#content .titleArea{
+  margin-bottom: 100px;
+}

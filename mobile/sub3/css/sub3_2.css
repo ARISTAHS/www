@@ -1,0 +1,23 @@
+/* 본문 */
+
+.titleArea p span{
+  color: #03509f;
+}
+.contentArea .img img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#content .contentArea section{width: 100%; overflow: hidden; margin-bottom: 50px;}
+
+#content .contentArea section h3{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #03509f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section ul{width: 95%; margin: 0 auto; overflow: hidden;}
+section ul li dl{margin-bottom: 30px; text-align: left; padding: 0 20px;}
+section ul li dl dt{ text-align: center; font-size: 1.5rem; font-weight: 500; color: #333; margin-bottom: 10px;}
+section ul li dl dd{text-align: left; font-size: 1rem; font-weight: 400; color: #666;}

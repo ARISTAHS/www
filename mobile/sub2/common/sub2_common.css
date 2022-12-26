@@ -1,0 +1,80 @@
+/* 서브 page 공통 영역 */
+
+.visual{
+  width: 100%; 
+  position:relative; 
+  overflow: hidden;
+}
+.visual img{width: 100%; height: 200px;}
+.visual h3{
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -55px;
+}
+
+.subNav{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 100px;
+}
+
+.subNav ul{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.subNav ul li{
+  float: left;
+  width: 50%; 
+  text-align: center;
+  position: relative;
+}
+
+.subNav ul li a{
+  display: block;
+  padding: 20px 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 400;
+  transition: all .5s;
+}
+
+.subNav ul li .current{
+  color: #fff;
+  background: #03509f;
+}
+
+#content{
+ width: 100%;
+ margin: 0 auto;
+}
+
+#content .titleArea{
+  margin-bottom: 65px;
+} 
+
+#content .titleArea h2{
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#content .titleArea p{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0 22px;
+}
+
+#content .titleArea h2 span{
+  display: block;
+  width: 45%;
+  height: 5px;
+  background: #03509f;
+  margin: 5px auto;
+}

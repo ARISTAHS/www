@@ -1,0 +1,140 @@
+/* 본문 영역 */
+/* 
+@keyframes up{
+  from{transform:translateY(50px); opacity: 0;}
+  to{transform:translateY(0); opacity: 1;}
+}
+@keyframes down{
+  from{transform:translateY(-30px); opacity: 0;}
+  to{transform:translateY(0); opacity: 1;}
+} */
+
+
+#content .titleArea h2 span{
+  width: 150px;
+}
+
+#content .titleArea p span,
+.contentArea section>p span{
+  color: #069;
+}
+
+.contentArea section{
+  margin-top: 100px;
+  height: 400px;
+  position: relative;
+}
+.contentArea section:nth-of-type(1){
+  margin-top: 130px;
+}
+.contentArea section:nth-of-type(1):before{
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #999;
+}
+
+.contentArea section:nth-of-type(5){
+  margin-bottom: 130px;
+}
+.contentArea section:nth-of-type(5):before{
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #999;
+}
+
+.contentArea section h3{
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #333;
+  margin-left: 30px;
+}
+
+.contentArea section h3 span{
+  display: block;
+  width: 300px;
+  height: 5px;
+  background: #069;
+  margin-top: 10px;
+}
+
+.contentArea section p{
+  position: absolute;
+  top: 0;
+} 
+.contentArea section:nth-of-type(1) p{
+  left: 170px;
+}
+.contentArea section:nth-of-type(2) p{
+  right: 130px;
+}
+.contentArea section:nth-of-type(3) p{
+  left: 230px;
+}
+.contentArea section:nth-of-type(4) p{
+  right: 135px;
+  top: 10px;
+}
+.contentArea section:nth-of-type(5) p{
+  left: 195px;
+  top: 10px;
+}
+
+.contentArea section:nth-of-type(1){
+  background: url(../images/content3/sub4_content1.jpg) 760px 0 no-repeat;
+}
+.contentArea section:nth-of-type(2){
+  background: url(../images/content3/sub4_content2.jpg) 45px 0 no-repeat;
+}
+.contentArea section:nth-of-type(3){
+  background: url(../images/content3/sub4_content3.jpg) 760px 0 no-repeat;
+}
+.contentArea section:nth-of-type(4){
+  background: url(../images/content3/sub4_content4.jpg) 30px 0 no-repeat;
+}
+.contentArea section:nth-of-type(5){
+  background: url(../images/content3/sub4_content5.jpg) 735px 0 no-repeat;
+}
+
+.contentArea section:nth-of-type(even) h3{
+  text-align: right;
+  margin-right: 510px;
+}
+
+.contentArea section:nth-of-type(2) h3 span{
+  margin-left: 520px;
+}
+.contentArea section:nth-of-type(4) h3 span{
+  margin-left: 542px;
+}
+
+.contentArea section dl{
+  line-height: 30px;
+  padding: 30px 0 0 15px ;
+  overflow: hidden;
+}
+
+.contentArea section dt{
+  font-size: 1.250em;
+  font-weight: 500;
+  color: #666;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  float: left;
+}
+
+.contentArea section dd{
+  padding-bottom: 10px;
+  white-space: pre-line;
+  font-weight: 500;
+  color: #666;
+}
+.contentArea section:nth-of-type(even) dt{
+  margin-left: 520px;
+}

@@ -1,0 +1,77 @@
+/* 본문 시작 */
+#content .titleArea h2 span{
+  width: 240px;
+}
+
+#content .titleArea{
+  margin-bottom: 100px;
+}
+#contentArea .tabs{ 
+  margin-bottom: 150px; 
+  overflow: hidden; 
+  width: 1200px; 
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+  top: 0;
+  left: 50%;
+}
+
+.contentArea .tabs .tab_menu{
+  overflow: hidden;
+  width: 1000px;
+  height: 75px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.contentArea .tab_menu li{
+  float: left;
+  width: 248px;
+  height: 75px;
+}
+
+.contentArea .tab_menu li a {
+  display: block;
+  width: 250px;
+  font-size: 1.250em;
+  font-weight: 500;
+  height: 75px;
+  text-align: center;
+  transition: all .5s;
+  padding: 20px 0;
+  background: #fff;
+  color: #333;
+}
+
+.contentArea .tab_menu li::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.cont .map_cont{
+ width: 1200px;
+ height: 500px;
+ margin: 100px 0;
+}
+.cont{}
+.location{}
+.location dl{padding:70px 0;}
+.location dl::after{content:''; display: block; clear: both;}
+.location dl + dl{border-top:1px dotted #ddd;}
+.location dl dt{float:left; font-size:1.5625rem; font-weight:700; letter-spacing:-0.025rem;
+    animation:ttl 1 .8s ease-out; animation-fill-mode: forwards; animation-delay: .5s; 
+}
+.location dl dt span{display: block; font-size:1.125rem; font-weight: 300; margin:5px 0 0;}
+.location dl dd{float:right; width: 850px; padding-left:70px; border-left:1px dotted #ddd; box-sizing:border-box; line-height:1.8; font-size:1.125rem; color:#666;
+    animation:cont 1 .8s ease-out; animation-fill-mode: forwards; animation-delay: .5s; }
+.location dl dd ul{}
+.location dl dd ul li{overflow:hidden; margin:10px 0 0;}
+.location dl dd ul li+li{border-top:1px dotted #ddd; padding-top:40px; margin-top:40px;}
+.location dl dd ul li:first-child{margin:0;}
+.location dl dd ul li > span{float:left; color:#333; font-weight:700;}
+.location dl dd ul li p{padding-left:105px; word-break:keep-all;}
+.location dl dd ul li p strong{font-weight:normal; display:block; color:#333;}
+.location dl dd ul li p span{display:block;}

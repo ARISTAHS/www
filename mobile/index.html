@@ -1,0 +1,345 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>삼성디스플레이</title>
+
+<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+<link rel="apple-touch-startup-image" href="./startup.png">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+
+<script src="https://kit.fontawesome.com/ef15d6eb6f.js" crossorigin="anonymous"></script>
+<script src="./js/prefixfree.min.js"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+ 
+</head>
+<body>
+ <div id="skipNav">
+     <a href="#content">본문바로가기</a>
+     <a href="#gnb">네비게이션바로가기</a>
+ </div>
+ 
+ 
+  <div id="wrap">
+    <header id="headerArea">
+
+       <div class="header_top">
+         <h1 class="logo"><a href="./index.html">SAMSUNG DISPLAY</a></h1>
+         <a href="#" class="menu_open">
+            <span>햄버거</span>
+        </a>
+       </div>
+
+       <div class="modal_box"></div>   
+        <nav id="gnb">
+           <h2 class="hidden">글로벌네비게이션영역</h2>
+           <ul class="mainMenu">
+            <li class="depth1">
+                <h3><a href="#">기업정보<i class="fa-solid fa-plus"></i></a></h3>
+                 <ul>
+                   <li>
+                     <a href="./sub1/sub1_1.html">기업소개</a>
+                   </li>
+                   <li>
+                     <a href="./sub1/sub1_2.html">CEO인사말</a>
+                   </li>
+                   <li>
+                     <a href="./sub1/sub1_3.html">SDC Culture</a>
+                   </li>
+                   <li>
+                     <a href="./sub1/sub1_4.html">연혁</a>
+                   </li>
+                 </ul>
+            </li>
+            <li class="depth1">
+                <h3><a href="#">기술센터<i class="fa-solid fa-plus"></i></a></h3>
+               <ul>
+                 <li>
+                    <a href="./sub2/sub2_1.html">Innovative Technology</a>
+                 </li>
+                 <li>
+                    <a href="./sub2/sub2_2.html">Product Description</a>
+                 </li>
+               </ul>
+            </li>
+            <li class="depth1">
+                <h3><a href="#">인재채용<i class="fa-solid fa-plus"></i></a></h3>
+                <ul>
+                    <li>
+                        <a href="./sub3/sub3_1.html">Employment</a>
+                    </li>
+                    <li>
+                        <a href="./sub3/sub3_2.html">company benefits</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="depth1 last">
+                <h3><a href="#">고객지원<i class="fa-solid fa-plus"></i></a></h3>
+               <ul>
+                 <li>
+                    <a href="./sub4/sub4_1.html">FAQ</a>
+                 </li>
+                 <li>
+                    <a href="./sub4/sub4_2.html">찾아오시는 길</a>
+                 </li>
+               </ul>
+            </li>
+        </ul>
+        <? if(!$userid) { ?>
+            <ul class="login">
+                <li>
+                    <a href="./login/login_form.php">로그인</a>
+                </li>
+                <li>
+                    <a href="./member/join.html">회원가입</a>
+                </li>
+            </ul>
+            <?
+        }
+        else
+        {
+      ?>
+            <ul class="login">
+                <li>
+                    <a href="./login/logout.php">로그아웃</a>
+                </li>
+                <li>
+                    <a href="./member/member_form_modify.php">정보수정</a>
+                </li>
+            </ul>
+            <?
+        }
+      ?>
+        </nav>
+        
+    </header>
+    <div class="visual">
+        <div class="gallery">
+            <ul>
+              <li class="link1">
+                <a href="#"><img src="./images/visual1_x2.png" alt='첨단 휘어지는 디스플레이' ><span><strong>디스플레이 혁신 기술</strong>로<br>확장된 미래를 펼치다.</span></a>
+              </li>
+              <li class="link2">
+                <a href="#"><img src="./images/visual2_x2.png" alt='아늑한 가정내의 디스플레이' ><span>일상의 변화를 넘어<br><strong>공간의 변화</strong>를 만듭니다.</span></a>
+              </li>
+              <li class="link3">
+                <a href="#"><img src="./images/visual3_x2.png" alt='시원한 분위기에 있는 디스플레이' ><span>디지털 세상의<br><strong>새로운 일상을 선사</strong>합니다.</span></a>
+              </li>
+            </ul>
+          </div>
+
+        <div class="dock">
+            <span class="mbutton  btn1" ></span>
+            <span class="mbutton  btn2" ></span>
+            <span class="mbutton  btn3" ></span>
+            <span class="ps"><span class="hidden"></span><i class="fa-regular fa-circle-pause fa-2x"></i></span>
+        </div>
+    </div>
+
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>  
+
+       <section class="inno">
+        <h3>Innovative Technology</h3>
+        <div class="control">
+            <a href="#"><span class="hidden">prev</span><i class="fa-regular fa-chevron-left"></i></a>
+            <a href="#"><span class="hidden">next</span><i class="fa-regular fa-chevron-right"></i></a>
+        </div>
+        <div class="cont">
+            <ul>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt>OLED Display</dt>
+                            <dd><img src="./images/content1_x2.png" alt=""></dd>
+                            <dd>삼성의 OLED 디스플레이는 선명한 화질과 슬림한 디자인, 낮은 소비전력 등 다양한 혁신 기술을 통해 글로벌 중소형 디스플레이 시작을 선도하고 있습니다.</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt>QD-Display</dt>
+                            <dd><img src="./images/content2_x2.png" alt=""></dd>
+                            <dd>스스로 빛을 내는 퀀텀닷은 명암 단계별로 광범위 하고 정확한 색 구현이 가능하며 간단한 구조로 차세대 대형 디스플레이에 사용되고 있습니다.</dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+       
+       </section>
+
+       <section class="PD">
+        <h3>Product Description</h3>
+        <p>삼성디스플레이의 제품은 여러분의 생활 곳곳에 존재합니다.</p>
+        
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/content3_x2.png" alt="">
+                            <p class="text">TV</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/content4_x2.png" alt="">
+                            <p class="text">스마트폰</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/content5_x2.png" alt="">
+                            <p class="text">모니터</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/content6_x2.png" alt="">
+                            <p class="text">탭</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          
+            <div class="swiper-pagination"></div>
+
+       </section>
+
+       <section class="Employ">
+        <h3>Employment</h3>
+        <p>도전,창의,열정을 가진 전문 인재를 기다립니다.</p>
+        <div>
+            <a href="#">
+                <img src="./images/content7_x2.png" alt="">
+                <p> <strong>미래를 위한 첫 걸음,</strong><br>
+                삼성디스플레이가 함께하겠습니다.</p>
+            </a>
+        </div>
+       </section>
+
+       <section class="faq">
+        <h3>FAQ</h3>
+        <p>고객 여러분이 궁금해하는 점을<br> 신속하게 답해드리겠습니다.</p>
+        <div class="faq_wrap">
+          <h3 class="hidden">자주묻는질문 리스트</h3>
+          <span><a href="#" class="all">답변 모두 열기</a></span>
+          <ul>
+              <li>
+                  <p><a href="#">삼성디스플레이는 본사가 어딘가요?</a></p>
+                  <p>
+                    경기도 용인시 기흥구 삼성로1에 본사가 있으며 그외 지방에도 캠퍼스가 있습니다.
+                  </p>
+              </li>
+              <li>
+                  <p><a href="#">내방문 가능할까요?</a></p>
+                  <p>
+                    예, 가능합니다. 삼성디스플레이 홈페이지에서 회원가입 후 로그인하시어 내방 신청 절차를 작성하여 제출해주시면 가능한 일자에 맞춰 안내가 발송됩니다.
+                  </p>
+              </li>
+              <li>
+                  <p><a href="#">삼성디스플레이 채용은 언제부터 시작인가요?</a></p>
+                  <p>
+                    시기에 따라 삼성채용홈페이지에서 세부 공지가 올라가며 신입,인턴,경력등에 따라 절차 및 지원 방법이 다릅니다. 
+                  </p>
+              </li>
+              <li>
+                  <p><a href="#">지원을 잘못했는데 수정된 지원서로 지원 가능할까요?</a></p>
+                  <p>
+                     해당 지원서 접수 기간이 마감된 이후에는 추가 지원서를 받지 않습니다. 
+                  </p>
+              </li>
+              
+          </ul>
+        </div>
+       </section>
+    
+    </article>
+
+    <footer id="footerArea">
+        <div class="footerInner">
+            <a href="#" class="move"><span class="hidden">top</span><i class="fa-light fa-circle-arrow-up"></i></a>
+
+            <div class="footer_top">
+                <ul class="terms">
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">보안신고센터</a></li>
+                  </ul>
+                <div class="footer_family">
+                    <a class="arrow" href="#">Family Site<span class="hidden">열기</span><i class="fas fa-chevron-down"></i></a>
+                    
+                    <ul class="family_list">
+                      <li><a href="#" target="_blank" title="삼성전자 새창에 열림">삼성전자</a></li>
+                      <li><a href="#" target="_blank" title="삼성SDS 새창에 열림">삼성SDS</a></li>
+                      <li><a href="#" target="_blank" title="삼성물산 새창에 열림">삼성물산</a></li>
+                    </ul>
+                </div>
+            </div>
+         
+            <div class="footer_info">
+                <address>
+                    삼성디스플레이<br>
+                      대표이사 : 최주선<br>
+                      주소 : 경기도 용인시 기흥구 삼성로 1 삼성디스플레이 기흥(우) 1713<br>
+                      대표번호 : 031-5181-1114<br>
+                    
+                  </address>
+                  <p class="copy">Copyright © SAMSUNG DISPLAY All rights reserved.</p>
+
+                  <div class="snsicon">
+                    <ul>
+                        <li><a href="#" target="_blank" title="인스타그램 창열림"><span class="hidden">인스타그램</span><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="#" target="_blank" title="유튜브 창열림"><span class="hidden">유튜브</span><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#" target="_blank" title="페이스북 창열림"><span class="hidden">페이스북</span><i class="fa-brands fa-square-facebook"></i></a></li>
+                      </ul>
+                </div>
+    
+            </div>
+
+        </div>
+    </footer>
+
+  </div>
+ 
+ <script src="./js/jquery-1.12.4.min.js"></script>
+ <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="./js/move.js"></script>
+ <script src="./js/gnb.js"></script>
+ <script src="./js/main.js"></script>
+ <script src="./js/swiper.min.js"></script>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+      autoHeight: true,
+      slidesPerView: 2,
+      spaceBetween:15,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+ 
+</body>
+</html>
