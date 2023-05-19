@@ -119,14 +119,14 @@ background-size: cover; }
 /* profile */
 .section .profile{height: 100%;}
 .profile .photo{background: url(../images/A9_04363.jpg) 50% 50% no-repeat; width: 40%; height: 100%; background-size: cover; float: left;}
-.profile .text{position: absolute;top: 50%; margin: 0 5% 0 50%; transform: translateY(-50%);text-align: justify; width: 50%;}
+.profile .text{position: absolute;top: 50%; right: 5%; transform: translateY(-50%);text-align: justify; width: 50%;}
 .profile .name{font-size: 4em; font-weight: 700; font-style: italic; color: #03509f; padding-bottom: 20px;}
 .profile .name span{padding-left: 30px; font-size: 1.5rem;}
-.profile .text p{font-size: 24px; margin: 20px 0;font-weight: 500;font-style: italic; border-bottom: 1px solid #666;}
+.profile .text p{font-size: 24px; margin: 20px 0;font-weight: 500; font-style: italic;}
 .profile .text p i{padding-right: 20px;}
 .profile .text p:last-of-type {margin-bottom: 0;}
-.profile .text .skill{display: flex; text-align: center;flex-wrap: wrap; width: 80%;}
-.profile .text .skill img{width: 12%; padding: 2.5%;}
+.profile .text .skill{display: flex; text-align: center; flex-wrap: wrap; align-items: center; gap: 5px; margin-top: 10px;}
+.profile .text .skill img{width: 12%; padding: 2%;}
 .profile .popol{margin-top: 100px; overflow: hidden;}
 .profile .popol li{float: left; position: relative; width: calc(33.33% - 4px); padding: 0 1.43rem; transition: all 1.5s ease-in-out;}
 .profile .popol li a{border: 1px solid #03509f; display: block;text-align: center; font-size: 1.3em;padding: 10px 0; line-height: 4rem;border-radius: 30px; font-weight: 500; color: #03509f;} 
