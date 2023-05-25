@@ -168,7 +168,7 @@ background-size: cover; }
 .webmedia .right,
 .webboot .right,
 .word .right{ 
-	margin-left: 56px;
+	/* margin-left: 56px; */
 	width: 50%;
 color: #fff;}
 
