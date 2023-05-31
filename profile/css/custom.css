@@ -118,22 +118,123 @@ background-size: cover; }
 
 /* profile */
 .section .profile{height: 100%;}
-.profile .photo{background: url(../images/A9_04363.jpg) 50% 50% no-repeat; width: 40%; height: 100%; background-size: cover; float: left;}
-.profile .text{position: absolute;top: 50%; right: 5%; transform: translateY(-50%);text-align: justify; width: 50%;}
-.profile .name{font-size: 2.5em; font-weight: 500; color: #1662b0bf; padding-bottom: 20px;}
-/* .profile .name span{padding-left: 30px; font-size: 1.5rem;} */
-.profile .text dl{margin-bottom: 10px;}
+.profile .photo{
+	background: url(../images/A9_04363.jpg) 50% 50% no-repeat; 
+	width: 30%; 
+	height: 70%; 
+	background-size: cover; 
+	border-radius: 40% 30% 40% 30% / 45% 70% 45% 70%;
+	position: relative;
+	left: 10.5%;
+	top: 15%;
+	transform: translateX(-10.5%);
+}
+.profile .text{position: absolute;top: 50%; right: 10%; transform: translateY(-50%);text-align: justify; width: 45%;}
+.profile .name{
+	position: relative;
+	display: inline-block;
+	font-size: 2.5em; font-weight: 500;
+	color: #333; padding-bottom: 20px;}
+.profile .name::before{
+	content: '정호석';
+	display: block;
+	font-size: 1.3rem;
+	position: absolute;
+	right: -20%;
+	top: -10%;
+	transform: translate(20%, 10%);
+}
+.profile .name::after{
+	content: '';
+	display: block;
+	background:#1068c2;
+	position: absolute;
+	left: 0%;
+	bottom: 25%;
+	width: 0px;
+	height: 3px;
+	z-index: -1;
+	animation-name: move;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.profile .name:hover{
+	color: #1068c2;
+	transition: color .5s ease-in-out;
+}
+@keyframes move{
+	0% {
+		left: 0;
+		width: 0%;
+	}
+	50% {
+		left: 50%;
+		width: 50%;
+	}
+	100%{
+		left: 100%;
+		width: 0%;
+	}
+}
+.profile .text dl{
+	margin-bottom: 10px;
+	padding: 25px 15px 10px;
+	border-top: 1px dashed #ccc;
+}
 .profile .text dl dt i{padding-right: 20px;}
-.profile .text dl dt {font-size: 1.2em;margin: 15px 0px; font-weight: 500;}
-.profile .text dl dd {background-color: #ccc; border-radius: 20px; font-size: .8em; padding: 5px 20px; line-height: 2em; font-weight: 400;}
+.profile .text dl dt {font-size: 1.2em; margin-bottom: 5px; font-weight: 500; line-height: 1.2em;}
+.profile .text dl dd {font-size: .8em; padding: 5px 20px; line-height: 2em; font-weight: 400;}
+.profile .text dl:hover dt i,
+.profile .text dl:hover dt
+{
+	color: rgba(255, 0, 0, 0.7);
+	transition: all .5s ease-in-out;
+	font-weight: 700;
+}
 
-.profile .text .skill{display: flex; text-align: center; flex-wrap: wrap; align-items: center; gap: 5px; margin-top: 10px;}
+.profile .text .skill{display: flex; justify-content: space-evenly; text-align: center; flex-wrap: wrap; align-items: center; gap: 5px;}
 .profile .text .skill img{width: 50px;}
-.profile .popol{margin-top: 100px; overflow: hidden;}
-.profile .popol li{float: left; position: relative; width: calc(33.33% - 4px); padding: 0 1.43rem; transition: all 1.5s ease-in-out;}
-.profile .popol li a{border: 1px solid #03509f; display: block;text-align: center; font-size: 1.3em;padding: 10px 0; line-height: 4rem;border-radius: 30px; font-weight: 500; color: #03509f;} 
-.profile .popol li a i{padding-left:20px; font-size: 60px;}
-.profile .popol li:hover a{background: rgba(1,20,73,1); color: #fff;}
+.profile .popol{
+	padding-top: 25px;
+	margin-top: 25px;
+	border-top: 1px dashed #ccc;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.profile .popol li{
+	position: relative; 
+	width: calc(33.33% - 4px); 
+	padding: 0 1.43rem;
+}
+.profile .popol li a{
+	border: 3px dashed #333; 
+	text-align: center; 
+	font-size: 1em;
+	padding: 10px 0;
+	line-height: 2.8rem;
+	font-weight: 500;
+	color: #333;
+	transition: all .8s ease-in-out;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+} 
+.profile .popol li a i{
+	/* padding-left:20px;  */
+	font-size: 40px;
+}
+.profile .popol li:hover a{
+	background: #333;
+	backdrop-filter: .8; 
+	border-radius: 40px;
+	color: #fff;
+	/* transition: all .8s ease-in-out; */
+}
 
 
 /* 공통 */
