@@ -114,6 +114,18 @@ background-size: cover; }
 }
 .section .home p strong{
     background: linear-gradient(to bottom, transparent 50%, #4867e8d9 50%) 0 -7px;
+}	
+#section1 a.scroll_down{
+	position:absolute; left: 50%; bottom: 70px; font-size:20px; 
+	transform: translateX(-50%);
+	font-style:italic; color:#fff; 
+	/* writing-mode: vertical-rl;  */
+	z-index: 3;}
+#section1 a.scroll_down i{display:inline-block; padding:0px 10px; animation:scroll_down infinite .7s linear;}
+
+@keyframes scroll_down {
+    0%{transform:translateY(0); opacity: 1;}
+    100%{transform:translateY(10px); opacity: 0;}
 }
 
 /* profile */
