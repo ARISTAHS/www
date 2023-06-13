@@ -1,4 +1,3 @@
-/*! This file is auto-generated */
 /*
  * Button mixin- creates 3d-ish button effect with correct
  * highlights/shadows, based on a base color.
@@ -59,7 +58,7 @@ input[type=radio]:checked:before {
   box-shadow: inset 0 2px 0 #727f30;
 }
 .wp-core-ui .button-primary[disabled], .wp-core-ui .button-primary:disabled, .wp-core-ui .button-primary.button-primary-disabled, .wp-core-ui .button-primary.disabled {
-  color: #cfd1c7 !important;
+  color: hsl(70.5263157895, 10%, 80%) !important;
   background: #89993a !important;
   border-color: #727f30 !important;
   text-shadow: none !important;
@@ -483,4 +482,4 @@ div#wp-responsive-toggle a:before {
 .mce-container.mce-menu .mce-menu-item-normal.mce-active,
 .mce-container.mce-menu .mce-menu-item-preview.mce-active {
   background: #a3b745;
-}
+}/*# sourceMappingURL=colors.css.map */
