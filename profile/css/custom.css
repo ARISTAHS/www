@@ -196,7 +196,7 @@ background-size: cover; }
 }
 .profile .text dl dt i{padding-right: 20px;}
 .profile .text dl dt {font-size: 1.2em; margin-bottom: 5px; font-weight: 500; line-height: 1.2em;}
-.profile .text dl dd {font-size: .8em; padding: 5px 20px; line-height: 2em; font-weight: 400;}
+.profile .text dl dd {font-size: 1em; padding: 5px 20px; line-height: 2em; font-weight: 400;}
 .profile .text dl:hover dt i,
 .profile .text dl:hover dt
 {

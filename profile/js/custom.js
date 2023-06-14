@@ -51,5 +51,5 @@ $(document).ready(function() {
 		// responsiveWidth:1024
 		
 	});
-		
+
 });
