@@ -2,14 +2,87 @@
 
 /* wrap */
 #wrap{
-    background: red;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
 /* 이력서 제목 */
+#resumeTitle{
+    margin-top: 50px;
+    border-bottom: 1px solid #c1c1c1;
+}
+#resumeTitle h1.big_title{
+    font-size: 1.6rem;
+    padding-bottom: .7rem;
+    line-height: 1.4em;
+    margin-left: 15%;
+}
 
 /* 이력서 본문 */
+#resumeContent{
+    position: relative;
+}
+#resumeContent .information{
+    padding-top: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#resumeContent .information ul{
+    margin: 0 15%;
+}
+#resumeContent .information ul li.picture_wrap{
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ececec;
+    float: left;
+    margin-right: 4%;
+}
+#resumeContent .information ul li.picture_wrap img{
+    width: 150px;
+}
+#resumeContent .information ul li.info_wrap{
+   overflow: hidden;
+}
+#resumeContent .information ul li.info_wrap .name{
+    width: fit-content;
+   font-weight: 700;
+   font-size: 1.25rem;
+   position: relative;
+   margin-bottom: 24px;
+}
+#resumeContent .information ul li.info_wrap dl{
+    float: left;    
+    width: 50%;
+    margin-bottom: 20px;
+}
+#resumeContent .information ul li.info_wrap dl dt{
+    /* font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    line-height: 1.5rem; */
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 2px;
+}
+
+#resumeContent .information ul li:last-child::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
 
 /* 이력서 하단 */
+#resumeFooter{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    text-align: center;
+    background: #035876;
+}
