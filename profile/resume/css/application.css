@@ -116,19 +116,53 @@
     font-size: 0.875rem;
     margin-bottom: 5px;
 }
-#resumeContent .inner_wrap{
-    width: 80%;
-    margin: 40px auto 0;
+#resumeContent .inner_wrap,
+#resumeContent .portfolio_wrap,
+#resumeContent .skill_wrap{
+    /* width: 80%; */
+    margin: 40px 15% 0;
     position: relative;
 }
 #resumeContent .inner_wrap div{
-    width: 30%;
+    padding-bottom: 30px;
+}
+#resumeContent .inner_wrap div h2,
+.portfolio_wrap h2,
+.skill_wrap h2{
+    width: fit-content;
+    font-weight: 700;
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 0;
 }
 #resumeContent .inner_wrap div h2,
 #resumeContent .inner_wrap div dl{
     margin-bottom: 10px;
 }
-
+#resumeContent .inner_wrap div dl{
+    display: flex;
+    /* flex-direction: row; */
+    /* gap: 100px; */
+    padding: 15px 0 ;
+    border-bottom: 1px solid #ececec;
+}
+#resumeContent .inner_wrap div dl dt{
+    width: 50%;
+}
+#resumeContent .inner_wrap div dl dd{
+    width: 50%;
+}
+.portfolio_wrap .inner_content dl{
+    padding-bottom: 20px;
+    display: flex;
+}
+.portfolio_wrap .inner_content dl dt{
+    width: 20%;
+}
+.portfolio_wrap .inner_content dl dd:first-child,
+.portfolio_wrap .inner_content dl dd:last-child{
+    width: 40%;
+}
 
 
 /* 이력서 하단 */
