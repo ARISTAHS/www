@@ -148,6 +148,9 @@
 .portfolio_wrap .inner_content dl dd:last-child{
     width: 20%;
 }
+.portfolio_wrap .inner_content dl dd:last-child a{
+    padding-left: 20px;
+}
 .skill_wrap{
     padding-bottom: 100px;
 }
