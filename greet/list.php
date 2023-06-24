@@ -59,8 +59,8 @@
 	<div class="subNav">
     <ul>
       <li><a class="current" href="../greet/list.php">공지사항</a></li>
-      <li><a href="../sub6_2.html">FAQ</a></li>
-      <li><a href="../sub6_3.html">찾아오시는 길</a></li>
+      <li><a href="../sub6/sub6_2.html">FAQ</a></li>
+      <li><a href="../sub6/sub6_3.html">찾아오시는 길</a></li>
     </ul>
   </div>
 
